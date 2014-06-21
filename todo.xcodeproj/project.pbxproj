@@ -14,6 +14,7 @@
 		4C574BD11955C7860055072E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C574BD01955C7860055072E /* Images.xcassets */; };
 		4C574BDD1955C7870055072E /* todoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C574BDC1955C7870055072E /* todoTests.swift */; };
 		4C574BE91955C7E00055072E /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C574BE81955C7E00055072E /* TaskManager.swift */; };
+		4C749AAF1955EC740069CD04 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C749AAE1955EC740069CD04 /* Task.swift */; };
 		4CBFC0771955E4CE00D5A9DE /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFC0751955E4CE00D5A9DE /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		4C574BDB1955C7870055072E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C574BDC1955C7870055072E /* todoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoTests.swift; sourceTree = "<group>"; };
 		4C574BE81955C7E00055072E /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		4C749AAE1955EC740069CD04 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		4CBFC0761955E4CE00D5A9DE /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +91,7 @@
 				4C574BD01955C7860055072E /* Images.xcassets */,
 				4C574BC51955C7860055072E /* Supporting Files */,
 				4CBFC0751955E4CE00D5A9DE /* Model.xcdatamodeld */,
+				4C749AAE1955EC740069CD04 /* Task.swift */,
 			);
 			path = todo;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				4C574BC81955C7860055072E /* AppDelegate.swift in Sources */,
 				4CBFC0771955E4CE00D5A9DE /* Model.xcdatamodeld in Sources */,
 				4C574BE91955C7E00055072E /* TaskManager.swift in Sources */,
+				4C749AAF1955EC740069CD04 /* Task.swift in Sources */,
 				4C574BCA1955C7860055072E /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -3,34 +3,27 @@ import CoreData
 
 var taskMgr = TaskManager()
 
-struct Task {
-    var name = ""
-    var desc = ""
-}
-
 class TaskManager: NSObject {
     var tasks = Task[]()
     
     func addTask(name: String, desc: String){
-        let task = Task(name: name, desc: desc)
-        tasks.append(task)
-        saveTask(task)
-    }
-    
-    func saveTask(task: Task) {
         var context = ctx()
-        var dbTask = NSEntityDescription.insertNewObjectForEntityForName("Tasks", inManagedObjectContext: context) as NSManagedObject
-        dbTask.setValue(task.name, forKey: "name")
-        dbTask.setValue(task.desc, forKey: "desc")
-        context.save(nil)
+        let ent = NSEntityDescription.entityForName("Tasks", inManagedObjectContext: context)
         
-        println(dbTask)
-        println("Task saved!")
+        var task = Task(entity: ent, insertIntoManagedObjectContext: context)
+        task.name = name
+        task.desc = desc
+        context.save(nil)
+        println("Task saved")
+        
+    
+        tasks.append(task)
     }
     
     func loadTasks(){
         var context = ctx()
-        var request = NSFetchRequest(entityName: "Tasks")
+        
+        let request = NSFetchRequest(entityName: "Tasks")
         request.returnsObjectsAsFaults = false
         
         // request.predicate = NSPredicate(format: "username = %@", txtUsername.text as String)
@@ -38,9 +31,9 @@ class TaskManager: NSObject {
         var results:NSArray = context.executeFetchRequest(request, error: nil)
         if (results.count > 0){
             
-            for res in results {
-               var task = Task(name: res.valueForKey("name") as String,
-                desc: res.valueForKey("desc") as String)
+            for result in results {
+                var task = result as Task
+                println(task.name)
                 tasks.append(task)
             }
         } else {
