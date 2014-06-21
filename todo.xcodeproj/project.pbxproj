@@ -14,6 +14,7 @@
 		4C574BD11955C7860055072E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C574BD01955C7860055072E /* Images.xcassets */; };
 		4C574BDD1955C7870055072E /* todoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C574BDC1955C7870055072E /* todoTests.swift */; };
 		4C574BE91955C7E00055072E /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C574BE81955C7E00055072E /* TaskManager.swift */; };
+		4CBFC0771955E4CE00D5A9DE /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFC0751955E4CE00D5A9DE /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		4C574BDB1955C7870055072E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C574BDC1955C7870055072E /* todoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoTests.swift; sourceTree = "<group>"; };
 		4C574BE81955C7E00055072E /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		4CBFC0761955E4CE00D5A9DE /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				4C574BCD1955C7860055072E /* Main.storyboard */,
 				4C574BD01955C7860055072E /* Images.xcassets */,
 				4C574BC51955C7860055072E /* Supporting Files */,
+				4CBFC0751955E4CE00D5A9DE /* Model.xcdatamodeld */,
 			);
 			path = todo;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			files = (
 				4C574BCC1955C7860055072E /* SecondViewController.swift in Sources */,
 				4C574BC81955C7860055072E /* AppDelegate.swift in Sources */,
+				4CBFC0771955E4CE00D5A9DE /* Model.xcdatamodeld in Sources */,
 				4C574BE91955C7E00055072E /* TaskManager.swift in Sources */,
 				4C574BCA1955C7860055072E /* FirstViewController.swift in Sources */,
 			);
@@ -405,6 +409,7 @@
 				4C574BE21955C7870055072E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C574BE31955C7870055072E /* Build configuration list for PBXNativeTarget "todoTests" */ = {
 			isa = XCConfigurationList;
@@ -413,8 +418,22 @@
 				4C574BE51955C7870055072E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4CBFC0751955E4CE00D5A9DE /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4CBFC0761955E4CE00D5A9DE /* Model.xcdatamodel */,
+			);
+			currentVersion = 4CBFC0761955E4CE00D5A9DE /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4C574BBA1955C7860055072E /* Project object */;
 }
