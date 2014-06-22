@@ -15,10 +15,15 @@ class TaskManager: NSObject {
         task.desc = desc
         context.save(nil)
         println("Task saved")
-        
     
         tasks.append(task)
     }
+    func remove(index: Int) {
+        var task = tasks[index]
+        ctx().deleteObject(task)
+        tasks.removeAtIndex(index)
+    }
+    
     
     func loadTasks(){
         var context = ctx()
