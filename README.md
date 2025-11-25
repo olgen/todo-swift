@@ -1,4 +1,2 @@
-todo-swift
-==========
-
-A simple iOS8 todo app for learning Swift
+# Free AI at api.airforce
+https://discord.gg/AJDsM7jtbq
